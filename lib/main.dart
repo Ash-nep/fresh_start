@@ -10,15 +10,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Flutter Demo', home: MyHomePage());
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: Center(
+        child: Padding(
+          padding: EdgeInsets.all(8),
+          child: Container(color: Colors.amber, child: Text("Archana Sharma")),
+        ),
+      ),
+    );
   }
 }
