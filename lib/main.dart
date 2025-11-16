@@ -8,8 +8,6 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
-  // TODO: change color of text
-  // TODO: change text
   // TODO: understand [Container] widget and make use of most of it
   @override
   Widget build(BuildContext context) {
@@ -19,7 +17,18 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Padding(
             padding: EdgeInsets.all(8),
-            child: Container(color: Colors.amber, child: Text("Archana Sharma")),
+            child: Container(
+              width: 300.0,
+              height: 100.0,
+              padding: EdgeInsets.all(10.0),
+              decoration: BoxDecoration(
+                //color: Colors.blueGrey,
+                border: Border.all(color: Colors.green),
+              ),
+              child: Center(
+                child: Text("Stranger Things", textAlign: TextAlign.center),
+              ),
+            ),
           ),
         ),
       ),
