@@ -27,11 +27,14 @@ class MyApp extends StatelessWidget {
                 height: 100.0,
               ),
               transform: Matrix4.rotationZ(0.05),
+          // TODO: FIX THIS ERROR
               final Decoration? foregroundDecoration;
+              // TODO: explore other properties of BoxDecoration
               decoration: BoxDecoration(
                 //color: Colors.blueGrey,
                 border: Border.all(color: Colors.green),
               ),
+              // TODO: PUT COLUMN WIDGET INSTEAD OF CENTER WIDGET
 
               child: Center(
                 child: Text("Stranger Things", textAlign: TextAlign.center),
