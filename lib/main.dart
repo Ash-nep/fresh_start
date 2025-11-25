@@ -3,7 +3,7 @@ import 'package:flutter/widget_previews.dart';
 import 'package:fresh_start/layouts/pages/lake_details.dart';
 import 'package:fresh_start/widgets/title_section.dart';
 
-bool isLayout = false;
+bool isLayout = true;
 
 void main() {
   runApp(const MyApp());
