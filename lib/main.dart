@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widget_previews.dart';
+import 'package:fresh_start/constraints/example2.dart';
 import 'package:fresh_start/layouts/pages/lake_details.dart';
 import 'package:fresh_start/widgets/title_section.dart';
 
-bool isLayout = true;
+bool isLayout = false;
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: Scaffold(body: isLayout ? LakeDetails() : Dummy()),
+      home: Scaffold(body: isLayout ? LakeDetails() : Example2()),
     );
   }
 }
